@@ -1,0 +1,211 @@
+/* CSS Document */
+body {
+  position:relative; 
+  text-align:center; 
+  display:block; 
+  width:100%; 
+}
+div.header {
+	width : 1024px;
+	background-color: #FFFFFF;
+	text-align:center;
+	padding:10px,0px,10px,0px;
+	font-family:sans-serif;
+	color:navy;
+	font-weight:bold;
+	font-size:10pt;
+}
+
+div.footer {
+	width : 1024px;
+	background-color: #FFFFFF;
+	text-align:center;
+	padding:10px,0px,10px,0px;
+	border-top : 2px solid navy;
+	font-family:sans-serif;
+	color: navy;
+	font-weight:bold;
+	font-size:8pt;
+}
+
+div.main {
+	background-color:#FFFFFF; 
+	width:1024px; 
+	text-align:center; 
+	/*height:768px;*/
+	position:absolute; 
+    left: 50%; 
+    top: 50%;
+	margin-left:-512px; 
+	margin-right: auto;
+}
+div.address {
+	background-color:#FFFFFF; 
+	width:1024px; 
+	text-align:center; 
+	background-position:center; 
+	overflow:auto; 
+	height:400px; 
+	font-size:11px; 
+	color:Navy;
+}
+div.info {
+	background-color:#FFFFFF; 
+	width:1020px; 
+	text-align:left; 
+	background-position:center; 
+	overflow:auto; 
+	height:300px; 
+	font-size:12px; 
+	color:Navy;
+}
+div.calendar {
+	background-color:#FFFFFF; 
+	width:1020px; 
+	text-align:center; 
+	background-position:center; 
+	overflow:auto; 
+	height:500px; 
+	font-size:12px; 
+	color:Navy;
+}
+div.login {
+	background-color:#FFFFFF; 
+	width:1020px; 
+	text-align:center; 
+	background-position:center; 
+	overflow:auto; 
+	height:300px; 
+	font-size:12px; 
+	color:Navy;
+}
+div.admin {
+	background-color:#FFFFFF; 
+	width:1020px; 
+	text-align:left; 
+	background-position:center; 
+	overflow:auto; 
+	height:280px; 
+	font-size:12px; 
+	color:Navy;
+}
+div.scroll {
+	background-color:#CCCCCC; 
+	width:768px; 
+	height:300px; 
+	text-align:center; 
+	background-position:center; 
+	overflow:scroll;
+}
+td.lcol {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:left; 
+	font-size:10px;
+}
+td.left {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:left; 
+	font-size:12px;
+}
+td.title {
+	background-color: #FFFF33; 
+	border-color:#9966CC; 
+	text-align:center; 
+	font-size:12px;
+}
+td.lcola {
+	background-color:#FFFFFF; 
+	border-color:#9966CC; 
+	text-align:left;
+	font-size:10px;
+}
+td.rcol {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:right;
+	font-size:10px;
+}
+td.right {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:right;
+	font-size:12px;
+}
+td.ctr {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:center;
+	font-size:10px;
+}
+td.center {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:center;
+	font-size:12px;
+}
+td.check {
+	background-color:#FFFFCC; 
+	border-color:#9966CC; 
+	text-align:center;
+	color:#FF0000;
+	font-size:10px;
+}
+td.del {
+	background-color:#FFFFCC; 
+	border-color:#9966CC; 
+	text-align:center;
+	color:#FF0000;
+	font-size:10px;
+}
+td.money {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:right;
+	font-size:10px;
+}
+td.moneya {
+	background-color:#FFFFFF; 
+	border-color:#9966CC; 
+	text-align:right;
+	font-size:10px;
+}
+td.datea {
+	background-color:#FFFFFF; 
+	border-color:#9966CC; 
+	text-align:center;
+	font-size:10px;
+}
+td.date {
+	background-color:#66FFFF; 
+	border-color:#9966CC; 
+	text-align:center;
+	font-size:10px;
+}
+button.dttm {
+	font-size : 6pt;
+	width : 15px;
+	height : 12px;
+	padding : 0px;
+	margin : 0px,0px,0px,5px;
+	border : 1px solid gray;
+}
+button.nav {
+	font-size : 8pt;
+	width : 35px;
+	height : 15px;
+	padding : 0px;
+	margin : 0px,0px,0px,5px;
+	border : 1px solid gray;
+}
+td.msg { 
+	color:#FF0000; 
+	text-align:center; 
+	font-size:12px;
+}
+div.msg { 
+	color:#FF0000; 
+	text-align:center; 
+	font-size:12px;
+}
