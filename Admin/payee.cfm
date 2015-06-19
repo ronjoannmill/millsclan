@@ -1,4 +1,4 @@
-<cfinclude template="check_session.cfm">
+<!--- <cfinclude template="check_session.cfm"> --->
 
 <cftry>
 	<cfquery name="payees" datasource="#application.database#">
