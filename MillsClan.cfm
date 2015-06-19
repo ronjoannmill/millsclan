@@ -143,7 +143,7 @@
                     <h1>Ron & Jo Ann</h1>
                     <hr class="colored">
                     <p>We are busy as usual!  Last child has a vehicle and will start driving in August!  Where has the time gone.  Family is doing great and kids and grandkids are nice and close. Jo Ann is still running the house and the taxi cab while I work.  Very blessed to have a great job!</p>
-                    <p>We have been enjoying a large amount of rain here lately. It helps our yard but it has hurt some.  Sure beats a drought though!</p>
+                    <p>Please note that all of the pictures used as backgrounds on this site were taken by us in our area.  The time of year is obviously the fall season.</p>
                 </div>
             </div>
         </div>
