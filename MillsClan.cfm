@@ -2,8 +2,9 @@
     select * from address
 </cfquery>
 <cfset mbgNumber = "">
-<cfif day(now()) mod 2>
-    <cfset mbgNummber = 1>
+<cfset mday = day(now())>
+<cfif (mday mod 2) eq 1>
+    <cfset mbgNumber = 1>
 </cfif>
 <!DOCTYPE html>
 <html lang="en">
