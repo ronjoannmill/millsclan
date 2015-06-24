@@ -192,7 +192,7 @@
                 <div class="col-md-6 text-center">
                     <h1>Jocelyn</h1>
                     <hr class="colored">
-                    <p>Jocelyn is back at home and working in Princeton, just northwest of McKinney.  She is very goood at what she does and loves the small town life.  She has her eyes on an ISD job either in Princeton or McKinney.</p>
+                    <p>Jocelyn is back at home and working in Princeton, just northwest of McKinney.  She is very good at what she does and loves the small town life.  She has her eyes on an ISD job either in Princeton or McKinney.</p>
                     <p>She still loves her Dodge truck and her country music!</p>
                 </div>
             </div>
