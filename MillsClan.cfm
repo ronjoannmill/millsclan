@@ -154,7 +154,7 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/img/creative/about.jpg" class="img-responsive" alt="">
+                    <img src="assets/img/JamesRobyn.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-6 text-center">
                     <h1>James & Robyn</h1>
