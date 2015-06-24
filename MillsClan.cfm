@@ -209,7 +209,7 @@
                     <h1>Andrew</h1>
                     <hr class="colored">
                     <p>This picture was taken at the beginning of his freshman season.  The team went 10 - 0 and won their district.  This is a first for McKinney High.  His biggest fan is standing next to him.</p>
-                    <p>Andrew has since been moved to Varsity and will start his Sophmore year on varsity playing both RT on offense and MLB on defense.</p>
+                    <p>Andrew has since been moved to Varsity and will start his Sophmore year on varsity playing both LT on offense and MLB on defense.</p>
                 </div>
             </div>
         </div>
