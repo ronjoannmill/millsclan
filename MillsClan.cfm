@@ -141,9 +141,9 @@
                     <img src="assets/img/ronjoann.jpeg" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-6 text-center">
-                    <h1>Ron & Jo Ann</h1>
+                    <h1>Ron <a href="payeelogin.cfm">&</a> Jo Ann</h1>
                     <hr class="colored">
-                    <p>We are busy as usual!  Last child has a vehicle and will start driving in August!  Where has the time gone.  Family is doing great and kids and grandkids are nice and close. Jo Ann is still running the house and the taxi cab while I work.  Very blessed to have a great job!</p>
+                    <p>We are busy as usual!  Last child is driving!  Where has the time gone.  Family is doing great and kids and grandkids are nice and close. Jo Ann is spending all the time she can with the new twin grandbabies!</p>
                     <p>Please note that all of the pictures used as backgrounds on this site were taken by us in our area.  The time of year is obviously the fall season.</p>
                 </div>
             </div>
@@ -159,8 +159,8 @@
                 <div class="col-md-6 text-center">
                     <h1>James & Robyn</h1>
                     <hr class="colored">
-                    <p>James and Robyn lead the typical life with three young children.  James is working from home and Robyn has just finished Vacation Bible school for their church this year.  I hear her registration job got a little easier this year thanks to an app built by James. (smart aleck!)</p>
-                    <p>Their kids are doing great and are enjoying the summer!</p>
+                    <p>James and Robyn lead the typical life with three young children.  James is working from home and Robyn is the head cab driver for the three kids.</p>
+                    <p>Their kids are doing great and are enjoying school! </p>
                 </div>
             </div>
         </div>
@@ -170,14 +170,14 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/img/leonelmindy.jpg" class="img-responsive" alt="">
+                    <img src="assets/img/AshlynnCheer.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-6 text-center">
                     <h1>Leonel & Mindy</h1>
                     <hr class="colored">
-                    <p>Leonel is working hard at a Wal Mart Super Center and Mindy is still nursing away at Presbyterian of PLano. LJ is in his last year of middle school and Ashlynn will be going into 4th grade.</p>
-                    <p>LJ enjoys baseball and band (he plays the bassoon). Ashlynn is an accomplished gymnast.</p>
-                    <p>The picture is from Christmas 2013.</p>
+                    <p>Leonel is working hard at a local Pest Control company and loving the change of pace from Wal Mart. Mindy is still nursing away at Presbyterian of PLano. LJ is a junior in high school and Ashlynn is in 7th grade.</p>
+                    <p>LJ enjoys driving and spending time with his girlfriend. Ashlynn is now a cheerleader.</p>
+                    <p>Ashlynn gets the most pictures since she is always in the spotlight.   This is one of her cheerleading pics.</p>
                 </div>
             </div>
         </div>
@@ -187,13 +187,13 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/img/jocelyn.jpg" class="img-responsive" alt="">
+                    <img src="assets/img/TwinsFathersDay.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-6 text-center">
                     <h1>Jocelyn</h1>
                     <hr class="colored">
-                    <p>Jocelyn is back at home and working in Princeton, just northwest of McKinney.  She is very good at what she does and loves the small town life.  She has her eyes on an ISD job either in Princeton or McKinney.</p>
-                    <p>She still loves her Dodge truck and her country music!</p>
+                    <p>Jocelyn and Jeremy are still living in Lowry Crossing, just northwest of McKinney.  Her twins are 20 months old now and definitely rule their kingdom! They are beautiful and do not lack for spoiling from MawMaw. (I never spoil grandkids!)</p>
+                    <p>She is an excellent mother! (No bull!) This picture was their Father's Day gift to Jeremy</p>
                 </div>
             </div>
         </div>
@@ -203,13 +203,13 @@
         <div class="container wow fadeIn">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/img/andrewjoann.jpg" class="img-responsive" alt="">
+                    <img src="assets/img/AndrewDoane.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-6 text-center">
                     <h1>Andrew</h1>
                     <hr class="colored">
-                    <p>This picture was taken at the beginning of his freshman season.  The team went 10 - 0 and won their district.  This is a first for McKinney High.  His biggest fan is standing next to him.</p>
-                    <p>Andrew has since been moved to Varsity and will start his Sophmore year on varsity playing both LT on offense and MLB on defense.</p>
+                    <p>This is Andrew's freshmen football photo at Doane University.</p>
+                    <p>He is having fun and doing well his Freshmen year. Mom still says he is too far away!</p>
                 </div>
             </div>
         </div>
