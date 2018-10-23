@@ -143,8 +143,8 @@
                 <div class="col-md-6 text-center">
                     <h1>Ron <a href="payeelogin.cfm">&</a> Jo Ann</h1>
                     <hr class="colored">
-                    <p>We are busy as usual!  Last child is driving!  Where has the time gone.  Family is doing great and kids and grandkids are nice and close. Jo Ann is spending all the time she can with the new twin grandbabies!</p>
-                    <p>Please note that all of the pictures used as backgrounds on this site were taken by us in our area.  The time of year is obviously the fall season.</p>
+                    <p>We are actual empty nesters now.  What a strange feeling! Andrew is enjoying his fist year of college at Doane University in Nebraska. Family is doing great and kids and grandkids are nice and close. Jo Ann is spending all the time she can with the twin grandbabies!</p>
+                    <p>Please note that all of the pictures used as backgrounds on this site were taken by us in our area with the exception of Andrew's address background.  His is a picture from his college campus.  The time of year is obviously the fall season.</p>
                 </div>
             </div>
         </div>
