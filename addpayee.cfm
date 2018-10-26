@@ -34,7 +34,7 @@
 		<cfqueryparam value="#aryPayee.date_created#" CFSQLType="cf_sql_timestamp" />
 		)		
 	</cfquery>
-	<cflocation url="payee.cfm" addtoken="no">	
+	<cflocation url="https://www.millsclan.com/payee.cfm" addtoken="no">	
 </cfif>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -1,4 +1,3 @@
-<!--- <cfinclude template="check_session.cfm"> --->
 
 <cftry>
 	<cfquery name="payees" datasource="#application.database#">
@@ -33,14 +32,18 @@
 <div class="address"><br /><br />
 <cfoutput>
 <table align="center">
+	<cfif StructKeyExists(URL,"msg")>
+		<tr><td colspan="9"><div class="msg">#URL.msg#</div></td></tr>
+	</cfif>
 <tr><td colspan="9">
 <cfif StructKeyExists(URL,"msg") AND Len(Trim(#URL.msg#)) gt 0>#URL.msg#<cfelse>&nbsp;</cfif>
 </td></tr>
 <tr><td class="title">ID</td><td class="title">Name</td><td class="title">URL</td><td class="title">User Name</td><td class="title">Password</td><td class="title">Description</td><td class="title">Pmt Method</td><td style="width:15px">&nbsp;</td><td style="width:15px">&nbsp;</td></tr>
 <cfloop query="payees">
-<tr><td class="left">#id#</td><td class="left">#name#</td><td class="left">#url#</td><td class="left">#user_name#</td><td class="left">#password#</td><td class="left">#description#</td><td class="left">#method#</td><td style="width:15px"><a href="https://www.millsclan.com/editpayee.cfm?id=#id#"><img border="none" width="15" height="15" src="images/b_edit.png" /></a></td><td style="width:15px"><a href="https://www.millsclan.com/deletepayee.cfm?id=#id#"><img border="none" width="15" height="15" src="images/X.gif" /></a></td></tr>
+<tr><td class="left">#id#</td><td class="left">#name#</td><td class="left">#url#</td><td class="left">#user_name#</td><td class="left">#password#</td><td class="left">#description#</td><td class="left">#method#</td><td style="width:15px"><a href="editpayee.cfm?id=#id#"><img border="none" width="15" height="15" src="images/b_edit.png" /></a></td><td style="width:15px"><a href="deletepayee.cfm?id=#id#"><img border="none" width="15" height="15" src="images/X.gif" /></a></td></tr>
 </cfloop>
-<tr><td colspan="9" style="text-align:center"><input type="button" name="Add" onClick="javascript:window.location='https://www.millsclan.com/addpayee.cfm'" value="Add" /></td></tr>
+<tr><td colspan="9" style="text-align:center"><input type="button" name="Add" onClick="javascript:window.location='addpayee.cfm'" value="Add" /></td></tr>
+<tr><td colspan="9" style="text-align:center"><input type="button" name="Logout" onClick="javascript:window.location='logout.cfm'" value="Logout" /></td></tr>
 </table>
 </cfoutput>
 </div>

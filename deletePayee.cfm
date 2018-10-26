@@ -12,5 +12,5 @@
 <cfelse>
 	<cfset mmsg = "">
 </cfif>
-<cflocation url="https://www.millsclan.com/payee.cfm?msg=#mmsg#" addtoken="no">	
+<cflocation url="payee.cfm?msg=#mmsg#" addtoken="no">	
 

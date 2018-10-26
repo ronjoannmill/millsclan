@@ -64,7 +64,7 @@
 		</cfmail>
 	</cfcatch>
 	</cftry>
-	<cflocation url="payee.cfm" addtoken="no">	
+	<cflocation url="https://www.millsclan.com/payee.cfm" addtoken="no">	
 </cfif>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -85,7 +85,7 @@
 <cfinclude template="header.cfm">
 <div class="address">
 <cfoutput>
-	<form name="payees" action="https://www.millsclan.com/editpayee.cfm?id=#pid#" method="post">
+	<form name="payees" action="#cgi.script_name#/editpayee.cfm?id=#pid#" method="post">
 		<table style="width:300px; text-align:center; border:none" align="center">
 				<tr><td style="text-align:right">
 					<tr><td style="text-align:right">Name:</td><td style="text-align:left"><input type="text" name="name" value="#aryPayee.name#" /></td></tr>

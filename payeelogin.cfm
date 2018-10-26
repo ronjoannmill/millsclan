@@ -1,8 +1,8 @@
 
 <cfset mdate = DateFormat(now(),"MMMM dd, yyyy")>
 <cfset dow = day(mdate)>
-<cfset murl = "index.cfm">
-<cfset session.loggedin = FALSE>
+<cfset murl = "millsclan.cfm">
+<cfset request.loggedin = FALSE>
 <cfif StructKeyExists(URL,"id")>
 	<cfset mid = #URL.id#>
 <cfelse>
@@ -13,25 +13,39 @@
 	<cftry>
 		<cfset user = Trim(#form.username#)>
 		<cfset pw = Trim(#form.pw#)><!---<cfdump var="#user# - #pw#"><cfabort>--->
+		<cfset combo = #pw# & #user#>
+		<cfset mhash = hash(#combo#, "SHA-512")>
 		<cfquery name="getLogin" datasource="#application.database#">
 			select count(*) as CNT 
 			from user 
-			where username = <cfqueryparam value="#user#" cfsqltype="cf_sql_varchar" /> 
-			and password = <cfqueryparam value="#pw#" cfsqltype="cf_sql_varchar" />
+			where user_hash = <cfqueryparam value="#mhash#" cfsqltype="cf_sql_varchar" /> 
 		</cfquery>
+		<cfmail 
+			to="ron@millsclan.com" 
+			from="ron@millsclan.com" 
+			server="mail.millsclan.com" 
+			username="ron@millsclan.com" 
+			password="Wed1994!" 
+			type="html" 
+			subject="MillsClan Login">
+			user - #user#<br />
+			pw - #pw#<br />
+			combo - #combo#<br />
+			mhash - #mhash#<br />
+			getLogin.CNT - #getLogin.CNT#<br />
+		</cfmail>
 		<cfif getLogin.CNT gt 0><!---edit addresses--->
-			<cfif #form.mid# eq 0>
-				<cfset murl = "payee.cfm">
+			<!--- <cfif #form.mid# eq 0> --->
 				<cfset session.loggedin = TRUE>
-			<cfelseif #form.mid# eq 2>
+				<cfset murl = "payee.cfm">
+			<!--- <cfelseif #form.mid# eq 2>
 				<cfset murl = "admin.cfm">
 			<cfelseif #form.mid# eq 3>
 				<cfset murl = "addaddress.cfm">
 			<cfelse>
 				<cfset murl = "payeelogin.cfm?msg=Login Failed">
-			</cfif>
-		<cfelse>
-			<cfset murl = "payeelogin.cfm?msg=Login Failed">
+			</cfif> --->
+			<cfoutput><META http-equiv="refresh" content="0;URL=#murl#"><a href="#murl#">You are now logged in.  Please wait...</a><br><br></cfoutput>
 		</cfif>
 	<cfcatch type="any">
 		<cfmail 
@@ -48,7 +62,7 @@
 		</cfmail>
 	</cfcatch>
 	</cftry>
-	<cflocation url="#murl#" addtoken="no">
+
 </cfif>
 
 <cfoutput>
@@ -60,7 +74,7 @@
 <link rel="stylesheet" type="text/css" href="css/millsclan.css" />
 <script language="javascript">
 	function go(){
-		window.location="index.cfm";
+		window.location="millsclan.cfm";
 		return;
 	}
 </script>
@@ -75,8 +89,8 @@
 	</cfif>
 	<tr><td style="text-align:right">
 	<form name="payeelogin" action="payeelogin.cfm" method="post">
-		Enter user name:</td><td style="width:180px; text-align:center"><input type="text" name="username" value="" /></td><td>&nbsp;</td></tr><br />
-		<tr><td style="text-align:right">Enter Password:</td><td style="width:180px; text-align:center"><input type="password" name="pw" value="" /></td>
+		Enter user name:</td><td style="width:180px; text-align:center"><input type="text" name="username" id="username" value="" /></td><td>&nbsp;</td></tr><br />
+		<tr><td style="text-align:right">Enter Password:</td><td style="width:180px; text-align:center"><input type="password" name="pw" id="pw" value="" /></td>
 		<td style="text-align:left">[Min 6 characters with at least one numeral]</td></tr><br />
 	<tr><td colspan="3" style="text-align:center"><button type="submit">Submit</button></td></tr>
 	<input type="hidden" name="mid" value="#mid#" />

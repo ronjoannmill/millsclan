@@ -10,21 +10,36 @@
 <body>
 <h3>Generate Password</h3>
 <!--- Do the following if the form has been submitted. --->
-<cfif IsDefined("Form.myString")>
-   <cfscript>
-		userObj = createObject("component", "#request.componentRoot#.user").init();
-   </cfscript>
-	<cfquery name="getID" datasource="#request.dsn#">
-		SELECT id FROM user WHERE username = <cfqueryparam value="#form.username#" cfsqltype="cf_sql_varchar" />
-	</cfquery>
-	
-	<cfif getID.recordcount gt 0>
-		<cfset mid = getID.id>
-		<cfset result = userObj.updateUserPassword(userID=#mid#,password=#form.myString#,resetLoginDate=TRUE)>   
-	<cfelse>
-		<cfset result = FALSE>
-	</cfif>
+<cfif StructKeyExists(FORM,"myString")>
+	<cftry>
+		<cfset user = Trim(#form.username#)>
+		<cfset pw = Trim(#form.myString#)><!---<cfdump var="#user# - #pw#"><cfabort>--->
+		<cfset combo = #pw# & #user#>
+		<cfset mhash = hash(#combo#, "SHA-512")>
+		<cfset pwupdate = "">
+		<cfset updateLogin = "">
+		<cfquery name="updateLogin" datasource="#application.database#" result="pwupdate">
+			update user set user_hash = <cfqueryparam value="#mhash#" cfsqltype="cf_sql_varchar" />
+			where username = <cfqueryparam value="#user#" cfsqltype="cf_sql_varchar" /> 
+		</cfquery>
 
+	<cfcatch type="any">
+		<cfmail 
+			to="ron@millsclan.com" 
+			from="ron@millsclan.com" 
+			server="mail.millsclan.com" 
+			username="ron@millsclan.com" 
+			password="Wed1994!" 
+			type="html" 
+			subject="MillsClan Error - Login">
+			Error Message - #cfcatch.Message#<br />
+			Error Detail - #cfcatch.Detail#<br />
+			<cfdump var="#cfcatch#">
+		</cfmail>
+		<cfdump var="#cfcatch#">
+		<cfset result = FALSE>
+	</cfcatch>
+	</cftry>
    <!--- Display the values used for encryption and decryption, 
          and the results. --->
 	<cfif result>
@@ -36,7 +51,9 @@
 		  <b>Password Update Failed<br>
 	   </cfoutput>
 	</cfif>
+
 </cfif>
+
 
 <!--- The input form.  --->
 <form action="regenpw.cfm" method="post">

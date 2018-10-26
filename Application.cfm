@@ -9,7 +9,7 @@
 <cfset application.session_cookie="MILLSwed1994">
 <cfset application.database="millsclan">
 <cfset application.key="Mills2006">
-<cfset application.lastedit="July 11, 2014">
+<cfset application.lastedit="October 26, 2018">
 <cfset application.myear=#year(now())#>
 <cfif not structKeyExists(cookie, "cfid")>
 	<cfset cookie.cfid = session.CFID>
